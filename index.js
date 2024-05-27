@@ -27,4 +27,4 @@ console.log("El costo total de los porductos y servicios selecionados es : $" + 
 
 
 
-// me ayude un poco con chat gpt para usar de ejemplo, mientras escribia el codigo tuve un error en la devolucion del costo total y no entedia porque la variable me salia como no definida hasta que me di cuenta que no habia puesto el return, me deje comentado para saber que hacia cada paso y asi poder entender mejor a la hora de estudiarlo
+// me ayude un poco con chat gpt para usar de ejemplo, mientras escribia el codigo tuve un error en la devolucion del costo total y no entedia porque la variable me salia como no definida hasta que me di cuenta que no habia puesto el return, me deje comentado para saber que hacia cada paso y asi poder entender mejor a la hora de estudiarlo.
