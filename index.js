@@ -37,16 +37,10 @@
 
 //variables declaradas
 
-let producto = [25 , 75, 50];
-let servicio = [50, 10];
-let totalProductosYServicios = productos.length;
+let productos = [];
+let servicios = [];
+let totalProductosYServicios = 0;
 let precioTotal = 0;
-
-//ciclo de iteracion
-
-for (let i =0; i < totalProductosYServicios; i++){
-    precioTotal+= calcularPrecioTotal (productos [i], servicios [i]);
-}
 
 //funcion para sumar productos y servicios
 
@@ -54,9 +48,37 @@ function calcularPrecioTotal(producto, servicio) {
     return producto + servicio;
 }
 
+//solicitar total de productos
+
+totalProductosYServicios = parseInt(prompt("Cuantos productos y serviciso va a contratar/comprar?"),10);
+
+//precios de productos
+
+for (let i = 0; i < totalProductosYServicios; i++) {
+    let producto = parseFloat(prompt(`Ingrese el precio del producto ${i + 1}:`));
+    productos.push(producto);
+}
+
+//precio de servicios
+
+for (let i = 0; i < totalProductosYServicios; i++) {
+    let servicio = parseFloat(prompt(`Ingrese el precio del servicio ${i + 1}:`));
+    servicios.push(servicio);
+}
+
+//ciclo de iteracion
+
+for (let i = 0; i < totalProductosYServicios; i++) {
+    precioTotal += calcularPrecioTotal(productos[i], servicios[i]);
+}
+
 //devolucion de consola
 
-console.log (`el precio total de los productos y servicios es ${precioTotal}`)
+console.log (`el precio total de los productos y servicios es ${precioTotal}`);
+
+//devolucion de promp
+
+alert(`El precio total es ${precioTotal}`);
 
 
 //me deje el resto comentado y ahi cambie el algoritmo
